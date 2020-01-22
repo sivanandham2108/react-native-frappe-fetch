@@ -45,19 +45,19 @@ Client.prototype.submit = function(doc) {
       "cmd": "frappe.client.submit",
       "doc": JSON.stringify(doc)
     })
-  }).then((res) => res.json());
+  }));
 };
 
 Client.prototype.getList = function(doctype) {
-  return fetch(this.url + "/api/resource/" + doctype, { method: "GET" }).then((res) => res.json());
+  return fetch(this.url + "/api/resource/" + doctype, { method: "GET" }));
 };
 
 Client.prototype.getDoc = function(doctype, name) {
-  return fetch(this.url + "/api/resource/" + doctype + "/" + name, { method: "GET" }).then((res) => res.json());
+  return fetch(this.url + "/api/resource/" + doctype + "/" + name, { method: "GET" }));
 };
 
 Client.prototype.getApi = function(method) {
-  return fetch(this.url + "/api/method/" + method, { method: "GET" }).then((res) => res.json());
+  return fetch(this.url + "/api/method/" + method, { method: "GET" }));
 };
 
 Client.prototype.postApi = function(method, data) {
