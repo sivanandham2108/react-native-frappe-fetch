@@ -45,7 +45,7 @@ Client.prototype.submit = function(doc) {
       "cmd": "frappe.client.submit",
       "doc": JSON.stringify(doc)
     })
-  }));
+  });
 };
 
 Client.prototype.getList = function(doctype) {
