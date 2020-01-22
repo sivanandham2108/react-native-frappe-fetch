@@ -49,15 +49,15 @@ Client.prototype.submit = function(doc) {
 };
 
 Client.prototype.getList = function(doctype) {
-  return fetch(this.url + "/api/resource/" + doctype, { method: "GET" }));
+  return fetch(this.url + "/api/resource/" + doctype, { method: "GET" });
 };
 
 Client.prototype.getDoc = function(doctype, name) {
-  return fetch(this.url + "/api/resource/" + doctype + "/" + name, { method: "GET" }));
+  return fetch(this.url + "/api/resource/" + doctype + "/" + name, { method: "GET" });
 };
 
 Client.prototype.getApi = function(method) {
-  return fetch(this.url + "/api/method/" + method, { method: "GET" }));
+  return fetch(this.url + "/api/method/" + method, { method: "GET" });
 };
 
 Client.prototype.postApi = function(method, data) {
